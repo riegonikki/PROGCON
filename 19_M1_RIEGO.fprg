@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 10:02:08 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLUVRVkdDOU07MjAxOS0xMC0yOTswOTozODo0NiBBTTsyNzc3"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLUVRVkdDOU07MjAxOS0xMC0yOTsxMDowMjowOCBBTTsxOzI4NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumOne" type="Integer" array="False" size=""/>
+            <declare name="NumTwo" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="Integer" array="False" size=""/>
+            <input variable="NumOne"/>
+            <input variable="NumTwo"/>
+            <assign variable="Answer" expression="NumOne+NumTwo"/>
+            <output expression="Answer" newline="True"/>
+        </body>
+    </function>
+    <function name="Start" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="SUM" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num1"/>
+            <assign variable="SUM" expression="num1 + num2"/>
+            <output expression="answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
