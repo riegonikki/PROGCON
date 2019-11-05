@@ -4,23 +4,23 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Rams"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-10-29 11:04:32 AM"/>
+        <attribute name="saved" value="2019-11-05 10:52:22 AM"/>
         <attribute name="created" value="UmFtcztERVNLVE9QLUVRVkdDOU07MjAxOS0xMC0yOTsxMDozNjowNSBBTTsyNzYy"/>
-        <attribute name="edited" value="UmFtcztERVNLVE9QLUVRVkdDOU07MjAxOS0xMC0yOTsxMTowNDozMiBBTTsxOzI4NjY="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLUVRVkdDOU07MjAxOS0xMS0wNTsxMDo1MjoyMiBBTTsxNjsyOTE2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <output expression="&quot;LET ME HELP YOU INB FINDING THE AREA OF THE CIRCLE&quot;" newline="True"/>
-            <output expression="&quot;WHAT WOULD YOU LIKE TO INPUT? RADIUS OR DIAMETER?&quot;" newline="True"/>
-            <output expression="&quot;MAKE SURE YOUR ANSWER IS ON CAPSLOCK PARA INTENSE&quot;" newline="True"/>
+            <output expression="&quot;Let me help you in finding theare of the circle!! Buti pa ako tinutulungan ka&quot;" newline="True"/>
+            <output expression="&quot;What would you like to input? write RADIUS OR DIAMETER.&quot;" newline="True"/>
+            <output expression="&quot;dapat CAPSLOCK para malaki hehe&quot;" newline="True"/>
             <declare name="RADIUS" type="Integer" array="False" size=""/>
             <declare name="DIAMETER" type="Integer" array="False" size=""/>
             <declare name="Answer" type="String" array="False" size=""/>
             <input variable="Answer"/>
             <if expression="Answer==&quot;RADIUS&quot;">
                 <then>
-                    <output expression="&quot;What is the Radius?&quot;" newline="True"/>
+                    <output expression="&quot;Ano yung radius? Lagay mo yung number tapos number ko naman bigay ko&quot;" newline="True"/>
                     <declare name="r" type="Integer" array="False" size=""/>
                     <declare name="AreaR" type="Integer" array="False" size=""/>
                     <input variable="r"/>
@@ -30,7 +30,7 @@
                 <else>
                     <if expression="Answer==&quot;DIAMETER&quot;">
                         <then>
-                            <output expression="&quot;What is the Diameter?&quot;" newline="True"/>
+                            <output expression="&quot;Ano yung diameter? Lagay mo number tapos number ko naman bigay ko&quot;" newline="True"/>
                             <declare name="d" type="Integer" array="False" size=""/>
                             <declare name="AreaD" type="Integer" array="False" size=""/>
                             <input variable="d"/>
@@ -41,25 +41,42 @@
                     </if>
                 </else>
             </if>
-            <output expression="&quot;HAPPY?&quot;" newline="True"/>
-            <output expression="&quot;YES OR NO?&quot;" newline="True"/>
+            <output expression="&quot;HAPPY? YES OR NO?&quot;" newline="True"/>
             <declare name="YES" type="Integer" array="False" size=""/>
             <declare name="NO" type="Integer" array="False" size=""/>
             <declare name="AnswerO" type="String" array="False" size=""/>
             <input variable="AnswerO"/>
             <if expression="AnswerO==&quot;YES&quot;">
                 <then>
-                    <output expression="&quot;YAY, welcome welcome&quot;" newline="True"/>
+                    <output expression="&quot;Sana all&quot;" newline="True"/>
                 </then>
                 <else>
                     <if expression="ANSWERO==&quot;NO&quot;">
                         <then>
-                            <output expression="&quot;AW&quot;" newline="True"/>
+                            <output expression="&quot;Pati sya di na masaya, kaya ka iniiwan e&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;AW&quot;" newline="True"/>
+                            <output expression="&quot;Pati sya di na masaya, kaya ka iniiwan e&quot;" newline="True"/>
                         </else>
                     </if>
+                </else>
+            </if>
+            <output expression="&quot;Isa pa ba? Write OO or HINDI&quot;" newline="True"/>
+            <declare name="OO" type="Integer" array="False" size=""/>
+            <declare name="HINDI" type="Integer" array="False" size=""/>
+            <declare name="Answer1" type="String" array="False" size=""/>
+            <input variable="Answer1"/>
+            <if expression="Answer1==&quot;OO&quot;">
+                <then>
+                    <call expression="Main"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <if expression="Answer1==&quot;HINDI&quot;">
+                        <then/>
+                        <else/>
+                    </if>
+                    <output expression="&quot;Edi wag&quot;" newline="True"/>
                 </else>
             </if>
         </body>
