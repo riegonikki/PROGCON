@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-06 02:28:52 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMDY7MjAxOS0xMS0wNjswMjoxMDo1MyBQTTsyMjA2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMDY7MjAxOS0xMS0wNjswMjoyODo1MiBQTTsxOzIzMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Let me help you in identifying if your number is odd or even!!&quot;" newline="True"/>
+            <output expression="&quot;INSERT A NUMBER&quot;" newline="True"/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <input variable="Number"/>
+            <if expression="Number%2==0">
+                <then>
+                    <output expression="&quot;That number is EVEN&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;That number is ODD&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Would you like to know another number? Insert YES or NO&quot;" newline="True"/>
+            <declare name="YES" type="Integer" array="False" size=""/>
+            <declare name="NO" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer=&quot;YES&quot;">
+                <then>
+                    <call expression="Main"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
